@@ -114,7 +114,7 @@ Quando adicionar o produto "Console Xbox Series S" no carrinho
     Verificar o resultado da pesquisa se esta listando o produto pesquisado
     Clicar no produto pesquisado
     Adicionar o produto "Console Xbox Series S" no carrinho
-
+    
 Então o produto "Console Xbox Series S" deve ser mostrado no carrinho
     Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
 
