@@ -10,6 +10,11 @@ ${H1_ELETRONICOS}       //h1[contains(.,'Eletrônicos e Tecnologia')]
 ${INPUT_PESQUISA}       //input[@id='twotabsearchtextbox']
 ${BOTAO_PESQUISA}       //input[@id='nav-search-submit-button']
 ${PRODUTO}              (//span[contains(.,'Console Xbox Series S')])[2]
+${ADICIONAR_CARRINHO}   add-to-cart-button
+${REMOVER_CARRINHO}     //a[contains(@href,'gtc')]
+${ADICIONADO_CARRINHO}  //span[contains(.,'Adicionado ao carrinho')]
+${EXCLUIR_ITEM}         (//input[contains(@value,'Excluir')])[1]
+${CARRINHO_VAZIO}       //h2[contains(.,'Seu carrinho da Amazon está vazio')]
     
 
 
@@ -61,6 +66,20 @@ Verificar o resultado da pesquisa se esta listando o produto pesquisado
 Clicar no produto pesquisado
     Click Element                   ${PRODUTO}
 
+Adicionar o produto "${PRODUTO}" no carrinho
+    Click Element                   id=${ADICIONAR_CARRINHO}
+
+Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
+    Element Should Be Visible       ${ADICIONADO_CARRINHO}
+
+Remover o produto "${PRODUTO}" do carrinho
+    Click Element                   xpath=${REMOVER_CARRINHO}
+    Click Element                   xpath=${EXCLUIR_ITEM}        
+
+Verificar se o carrinho fica vazio
+    Element Should Be Visible       ${CARRINHO_VAZIO}     
+    
+
 #GHERKING STEPS
 
 Dado que estou na home page da Amazon.com.br
@@ -88,5 +107,8 @@ Então o produto deverá ser listado
 
 E deverá clicar no produto 
     Clicar no produto pesquisado
+
+
+
 
 
