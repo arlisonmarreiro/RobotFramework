@@ -132,3 +132,4 @@ dmypy.json
 geckodriver.log
 /.idea/
 workspace.json
+*.code-workspace
