@@ -35,7 +35,7 @@ Caso de Teste 03 - Adicionar Produto no Carrinho
     [Documentation]    Esse teste verifica a adição de um produto no carrinho de compras
     [Tags]             adicionar_carrinho
     Acessar a home page do site amazon.com.br
-    Digitar o nome de produto "Xbox Series S" no campo de pesquisa
+    Digitar o nome de produto "Volante Logitech G920 Driving Force para Xbox Series X|S, Xbox One e PC " no campo de pesquisa
     Clicar no botão de pesquisa
     Verificar o resultado da pesquisa se esta listando o produto pesquisado
     Clicar no produto pesquisado

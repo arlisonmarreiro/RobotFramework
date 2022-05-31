@@ -9,7 +9,7 @@ ${MENU_ELETRONICOS}     //a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=162
 ${H1_ELETRONICOS}       //h1[contains(.,'Eletrônicos e Tecnologia')]
 ${INPUT_PESQUISA}       //input[@id='twotabsearchtextbox']
 ${BOTAO_PESQUISA}       //input[@id='nav-search-submit-button']
-${PRODUTO}              (//span[contains(.,'Console Xbox Series S')])[2]
+${PRODUTO}              //img[contains(@alt,'Volante Logitech G920 Driving Force para Xbox Series X|S, Xbox One e PC')]
 ${ADICIONAR_CARRINHO}   add-to-cart-button
 ${REMOVER_CARRINHO}     //a[contains(@href,'gtc')]
 ${ADICIONADO_CARRINHO}  //span[contains(.,'Adicionado ao carrinho')]
@@ -67,6 +67,7 @@ Clicar no produto pesquisado
     Click Element                   ${PRODUTO}
 
 Adicionar o produto "${PRODUTO}" no carrinho
+    Wait Until Element is Visible   id=${ADICIONAR_CARRINHO}
     Click Element                   id=${ADICIONAR_CARRINHO}
 
 Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
