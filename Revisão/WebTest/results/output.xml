@@ -1,0 +1,3235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220823 14:04:03.120" rpa="false" schemaversion="3">
+<suite id="s1" name="Teste2" source="C:\Users\Arlison\Desktop\RobotFramework\Revisão\WebTest\teste2.robot">
+<test id="s1-t1" name="TC-01 - teste" line="14">
+<kw name="Abrir navegador" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 14:04:04.174" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<msg timestamp="20220823 14:04:04.204" level="INFO">Firefox driver log is always forced to to: C:\Users\Arlison\Desktop\RobotFramework\Revisão\WebTest\results\geckodriver-94.log</msg>
+<status status="PASS" starttime="20220823 14:04:04.173" endtime="20220823 14:04:12.628"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220823 14:04:12.628" endtime="20220823 14:04:12.897"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:04.170" endtime="20220823 14:04:12.898"/>
+</kw>
+<kw name="acessar site">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220823 14:04:12.936" level="INFO">Opening url 'https://dluccz.github.io/call-gemidao-zap/'</msg>
+<status status="PASS" starttime="20220823 14:04:12.935" endtime="20220823 14:04:14.927"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:12.934" endtime="20220823 14:04:14.927"/>
+</kw>
+<kw name="preencher">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[contains(@id,'from')]</arg>
+<arg>123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:14.958" level="INFO">Typing text '123456789' into text field '//input[contains(@id,'from')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:14.958" endtime="20220823 14:04:15.114"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[contains(@id,'to')]</arg>
+<arg>101112131415</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:15.114" level="INFO">Typing text '101112131415' into text field '//input[contains(@id,'to')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:15.114" endtime="20220823 14:04:15.179"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:14.958" endtime="20220823 14:04:15.180"/>
+</kw>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:15.277" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:15.274" endtime="20220823 14:04:15.555"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:15.261" endtime="20220823 14:04:15.556"/>
+</kw>
+<kw name="repetir">
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>5000</arg>
+<arg>clicar no botão</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20220823 14:04:15.605" level="INFO">Repeating keyword, round 1/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:15.608" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:15.607" endtime="20220823 14:04:15.851"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:15.605" endtime="20220823 14:04:15.852"/>
+</kw>
+<msg timestamp="20220823 14:04:15.852" level="INFO">Repeating keyword, round 2/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:15.855" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:15.853" endtime="20220823 14:04:16.090"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:15.852" endtime="20220823 14:04:16.090"/>
+</kw>
+<msg timestamp="20220823 14:04:16.090" level="INFO">Repeating keyword, round 3/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:16.090" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:16.090" endtime="20220823 14:04:16.340"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:16.090" endtime="20220823 14:04:16.340"/>
+</kw>
+<msg timestamp="20220823 14:04:16.340" level="INFO">Repeating keyword, round 4/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:16.340" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:16.340" endtime="20220823 14:04:16.583"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:16.340" endtime="20220823 14:04:16.583"/>
+</kw>
+<msg timestamp="20220823 14:04:16.583" level="INFO">Repeating keyword, round 5/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:16.583" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:16.583" endtime="20220823 14:04:16.847"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:16.583" endtime="20220823 14:04:16.847"/>
+</kw>
+<msg timestamp="20220823 14:04:16.847" level="INFO">Repeating keyword, round 6/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:16.847" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:16.847" endtime="20220823 14:04:17.105"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:16.847" endtime="20220823 14:04:17.105"/>
+</kw>
+<msg timestamp="20220823 14:04:17.105" level="INFO">Repeating keyword, round 7/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:17.105" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:17.105" endtime="20220823 14:04:17.356"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:17.105" endtime="20220823 14:04:17.356"/>
+</kw>
+<msg timestamp="20220823 14:04:17.356" level="INFO">Repeating keyword, round 8/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:17.356" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:17.356" endtime="20220823 14:04:17.625"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:17.356" endtime="20220823 14:04:17.625"/>
+</kw>
+<msg timestamp="20220823 14:04:17.625" level="INFO">Repeating keyword, round 9/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:17.625" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:17.625" endtime="20220823 14:04:17.894"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:17.625" endtime="20220823 14:04:17.894"/>
+</kw>
+<msg timestamp="20220823 14:04:17.894" level="INFO">Repeating keyword, round 10/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:17.894" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:17.894" endtime="20220823 14:04:18.182"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:17.894" endtime="20220823 14:04:18.182"/>
+</kw>
+<msg timestamp="20220823 14:04:18.182" level="INFO">Repeating keyword, round 11/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:18.182" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:18.182" endtime="20220823 14:04:18.434"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:18.182" endtime="20220823 14:04:18.434"/>
+</kw>
+<msg timestamp="20220823 14:04:18.434" level="INFO">Repeating keyword, round 12/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:18.434" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:18.434" endtime="20220823 14:04:18.684"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:18.434" endtime="20220823 14:04:18.684"/>
+</kw>
+<msg timestamp="20220823 14:04:18.684" level="INFO">Repeating keyword, round 13/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:18.684" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:18.684" endtime="20220823 14:04:18.974"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:18.684" endtime="20220823 14:04:18.975"/>
+</kw>
+<msg timestamp="20220823 14:04:18.976" level="INFO">Repeating keyword, round 14/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:18.978" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:18.977" endtime="20220823 14:04:19.225"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:18.976" endtime="20220823 14:04:19.225"/>
+</kw>
+<msg timestamp="20220823 14:04:19.225" level="INFO">Repeating keyword, round 15/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:19.225" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:19.225" endtime="20220823 14:04:19.480"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:19.225" endtime="20220823 14:04:19.480"/>
+</kw>
+<msg timestamp="20220823 14:04:19.480" level="INFO">Repeating keyword, round 16/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:19.480" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:19.480" endtime="20220823 14:04:19.739"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:19.480" endtime="20220823 14:04:19.739"/>
+</kw>
+<msg timestamp="20220823 14:04:19.739" level="INFO">Repeating keyword, round 17/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:19.739" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:19.739" endtime="20220823 14:04:20.010"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:19.739" endtime="20220823 14:04:20.010"/>
+</kw>
+<msg timestamp="20220823 14:04:20.010" level="INFO">Repeating keyword, round 18/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:20.010" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:20.010" endtime="20220823 14:04:20.263"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:20.010" endtime="20220823 14:04:20.263"/>
+</kw>
+<msg timestamp="20220823 14:04:20.263" level="INFO">Repeating keyword, round 19/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:20.263" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:20.263" endtime="20220823 14:04:20.514"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:20.263" endtime="20220823 14:04:20.514"/>
+</kw>
+<msg timestamp="20220823 14:04:20.514" level="INFO">Repeating keyword, round 20/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:20.514" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:20.514" endtime="20220823 14:04:20.776"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:20.514" endtime="20220823 14:04:20.776"/>
+</kw>
+<msg timestamp="20220823 14:04:20.776" level="INFO">Repeating keyword, round 21/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:20.776" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:20.776" endtime="20220823 14:04:21.019"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:20.776" endtime="20220823 14:04:21.019"/>
+</kw>
+<msg timestamp="20220823 14:04:21.019" level="INFO">Repeating keyword, round 22/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:21.019" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:21.019" endtime="20220823 14:04:21.268"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:21.019" endtime="20220823 14:04:21.268"/>
+</kw>
+<msg timestamp="20220823 14:04:21.268" level="INFO">Repeating keyword, round 23/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:21.268" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:21.268" endtime="20220823 14:04:21.523"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:21.268" endtime="20220823 14:04:21.523"/>
+</kw>
+<msg timestamp="20220823 14:04:21.523" level="INFO">Repeating keyword, round 24/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:21.523" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:21.523" endtime="20220823 14:04:21.778"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:21.523" endtime="20220823 14:04:21.778"/>
+</kw>
+<msg timestamp="20220823 14:04:21.778" level="INFO">Repeating keyword, round 25/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:21.778" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:21.778" endtime="20220823 14:04:22.092"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:21.778" endtime="20220823 14:04:22.092"/>
+</kw>
+<msg timestamp="20220823 14:04:22.092" level="INFO">Repeating keyword, round 26/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:22.092" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:22.092" endtime="20220823 14:04:22.376"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:22.092" endtime="20220823 14:04:22.376"/>
+</kw>
+<msg timestamp="20220823 14:04:22.376" level="INFO">Repeating keyword, round 27/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:22.376" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:22.376" endtime="20220823 14:04:22.627"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:22.376" endtime="20220823 14:04:22.627"/>
+</kw>
+<msg timestamp="20220823 14:04:22.627" level="INFO">Repeating keyword, round 28/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:22.627" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:22.627" endtime="20220823 14:04:22.892"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:22.627" endtime="20220823 14:04:22.892"/>
+</kw>
+<msg timestamp="20220823 14:04:22.893" level="INFO">Repeating keyword, round 29/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:22.898" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:22.894" endtime="20220823 14:04:23.170"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:22.893" endtime="20220823 14:04:23.171"/>
+</kw>
+<msg timestamp="20220823 14:04:23.171" level="INFO">Repeating keyword, round 30/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:23.178" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:23.174" endtime="20220823 14:04:23.517"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:23.173" endtime="20220823 14:04:23.518"/>
+</kw>
+<msg timestamp="20220823 14:04:23.518" level="INFO">Repeating keyword, round 31/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:23.521" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:23.520" endtime="20220823 14:04:23.861"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:23.519" endtime="20220823 14:04:23.862"/>
+</kw>
+<msg timestamp="20220823 14:04:23.862" level="INFO">Repeating keyword, round 32/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:23.866" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:23.865" endtime="20220823 14:04:24.190"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:23.864" endtime="20220823 14:04:24.191"/>
+</kw>
+<msg timestamp="20220823 14:04:24.191" level="INFO">Repeating keyword, round 33/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:24.195" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:24.192" endtime="20220823 14:04:24.451"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:24.191" endtime="20220823 14:04:24.452"/>
+</kw>
+<msg timestamp="20220823 14:04:24.452" level="INFO">Repeating keyword, round 34/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:24.458" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:24.454" endtime="20220823 14:04:24.722"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:24.453" endtime="20220823 14:04:24.723"/>
+</kw>
+<msg timestamp="20220823 14:04:24.726" level="INFO">Repeating keyword, round 35/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:24.728" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:24.727" endtime="20220823 14:04:24.999"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:24.726" endtime="20220823 14:04:24.999"/>
+</kw>
+<msg timestamp="20220823 14:04:24.999" level="INFO">Repeating keyword, round 36/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:25.002" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:25.001" endtime="20220823 14:04:25.309"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:25.000" endtime="20220823 14:04:25.309"/>
+</kw>
+<msg timestamp="20220823 14:04:25.310" level="INFO">Repeating keyword, round 37/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:25.315" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:25.311" endtime="20220823 14:04:25.570"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:25.310" endtime="20220823 14:04:25.571"/>
+</kw>
+<msg timestamp="20220823 14:04:25.571" level="INFO">Repeating keyword, round 38/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:25.574" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:25.572" endtime="20220823 14:04:25.829"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:25.571" endtime="20220823 14:04:25.830"/>
+</kw>
+<msg timestamp="20220823 14:04:25.830" level="INFO">Repeating keyword, round 39/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:25.833" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:25.832" endtime="20220823 14:04:26.106"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:25.831" endtime="20220823 14:04:26.107"/>
+</kw>
+<msg timestamp="20220823 14:04:26.107" level="INFO">Repeating keyword, round 40/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:26.111" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:26.110" endtime="20220823 14:04:26.370"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:26.107" endtime="20220823 14:04:26.370"/>
+</kw>
+<msg timestamp="20220823 14:04:26.370" level="INFO">Repeating keyword, round 41/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:26.373" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:26.372" endtime="20220823 14:04:26.636"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:26.371" endtime="20220823 14:04:26.637"/>
+</kw>
+<msg timestamp="20220823 14:04:26.637" level="INFO">Repeating keyword, round 42/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:26.640" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:26.639" endtime="20220823 14:04:26.902"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:26.638" endtime="20220823 14:04:26.902"/>
+</kw>
+<msg timestamp="20220823 14:04:26.902" level="INFO">Repeating keyword, round 43/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:26.902" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:26.902" endtime="20220823 14:04:27.190"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:26.902" endtime="20220823 14:04:27.191"/>
+</kw>
+<msg timestamp="20220823 14:04:27.191" level="INFO">Repeating keyword, round 44/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:27.193" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:27.192" endtime="20220823 14:04:27.518"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:27.191" endtime="20220823 14:04:27.519"/>
+</kw>
+<msg timestamp="20220823 14:04:27.519" level="INFO">Repeating keyword, round 45/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:27.522" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:27.521" endtime="20220823 14:04:27.782"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:27.519" endtime="20220823 14:04:27.783"/>
+</kw>
+<msg timestamp="20220823 14:04:27.783" level="INFO">Repeating keyword, round 46/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:27.789" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:27.788" endtime="20220823 14:04:28.094"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:27.787" endtime="20220823 14:04:28.094"/>
+</kw>
+<msg timestamp="20220823 14:04:28.094" level="INFO">Repeating keyword, round 47/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:28.094" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:28.094" endtime="20220823 14:04:28.422"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:28.094" endtime="20220823 14:04:28.423"/>
+</kw>
+<msg timestamp="20220823 14:04:28.423" level="INFO">Repeating keyword, round 48/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:28.429" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:28.428" endtime="20220823 14:04:28.723"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:28.423" endtime="20220823 14:04:28.723"/>
+</kw>
+<msg timestamp="20220823 14:04:28.727" level="INFO">Repeating keyword, round 49/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:28.729" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:28.728" endtime="20220823 14:04:29.038"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:28.727" endtime="20220823 14:04:29.039"/>
+</kw>
+<msg timestamp="20220823 14:04:29.039" level="INFO">Repeating keyword, round 50/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:29.042" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:29.041" endtime="20220823 14:04:29.347"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:29.040" endtime="20220823 14:04:29.348"/>
+</kw>
+<msg timestamp="20220823 14:04:29.348" level="INFO">Repeating keyword, round 51/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:29.350" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:29.349" endtime="20220823 14:04:29.622"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:29.348" endtime="20220823 14:04:29.626"/>
+</kw>
+<msg timestamp="20220823 14:04:29.626" level="INFO">Repeating keyword, round 52/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:29.630" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:29.628" endtime="20220823 14:04:29.912"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:29.627" endtime="20220823 14:04:29.913"/>
+</kw>
+<msg timestamp="20220823 14:04:29.913" level="INFO">Repeating keyword, round 53/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:29.919" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:29.918" endtime="20220823 14:04:30.205"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:29.917" endtime="20220823 14:04:30.206"/>
+</kw>
+<msg timestamp="20220823 14:04:30.206" level="INFO">Repeating keyword, round 54/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:30.211" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:30.210" endtime="20220823 14:04:30.493"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:30.206" endtime="20220823 14:04:30.493"/>
+</kw>
+<msg timestamp="20220823 14:04:30.494" level="INFO">Repeating keyword, round 55/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:30.500" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:30.499" endtime="20220823 14:04:30.928"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:30.494" endtime="20220823 14:04:30.928"/>
+</kw>
+<msg timestamp="20220823 14:04:30.928" level="INFO">Repeating keyword, round 56/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:30.928" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:30.928" endtime="20220823 14:04:31.264"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:30.928" endtime="20220823 14:04:31.264"/>
+</kw>
+<msg timestamp="20220823 14:04:31.264" level="INFO">Repeating keyword, round 57/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:31.271" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:31.266" endtime="20220823 14:04:31.562"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:31.265" endtime="20220823 14:04:31.562"/>
+</kw>
+<msg timestamp="20220823 14:04:31.562" level="INFO">Repeating keyword, round 58/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:31.569" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:31.564" endtime="20220823 14:04:31.864"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:31.563" endtime="20220823 14:04:31.864"/>
+</kw>
+<msg timestamp="20220823 14:04:31.865" level="INFO">Repeating keyword, round 59/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:31.872" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:31.866" endtime="20220823 14:04:32.142"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:31.865" endtime="20220823 14:04:32.142"/>
+</kw>
+<msg timestamp="20220823 14:04:32.143" level="INFO">Repeating keyword, round 60/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:32.150" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:32.145" endtime="20220823 14:04:32.430"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:32.143" endtime="20220823 14:04:32.430"/>
+</kw>
+<msg timestamp="20220823 14:04:32.430" level="INFO">Repeating keyword, round 61/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:32.433" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:32.432" endtime="20220823 14:04:32.760"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:32.431" endtime="20220823 14:04:32.761"/>
+</kw>
+<msg timestamp="20220823 14:04:32.761" level="INFO">Repeating keyword, round 62/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:32.783" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:32.780" endtime="20220823 14:04:33.240"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:32.768" endtime="20220823 14:04:33.240"/>
+</kw>
+<msg timestamp="20220823 14:04:33.241" level="INFO">Repeating keyword, round 63/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:33.250" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:33.249" endtime="20220823 14:04:33.532"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:33.242" endtime="20220823 14:04:33.532"/>
+</kw>
+<msg timestamp="20220823 14:04:33.532" level="INFO">Repeating keyword, round 64/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:33.540" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:33.534" endtime="20220823 14:04:33.808"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:33.533" endtime="20220823 14:04:33.808"/>
+</kw>
+<msg timestamp="20220823 14:04:33.811" level="INFO">Repeating keyword, round 65/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:33.818" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:33.812" endtime="20220823 14:04:34.119"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:33.811" endtime="20220823 14:04:34.119"/>
+</kw>
+<msg timestamp="20220823 14:04:34.120" level="INFO">Repeating keyword, round 66/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:34.128" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:34.122" endtime="20220823 14:04:34.418"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:34.121" endtime="20220823 14:04:34.418"/>
+</kw>
+<msg timestamp="20220823 14:04:34.418" level="INFO">Repeating keyword, round 67/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:34.429" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:34.428" endtime="20220823 14:04:34.728"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:34.422" endtime="20220823 14:04:34.728"/>
+</kw>
+<msg timestamp="20220823 14:04:34.730" level="INFO">Repeating keyword, round 68/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:34.738" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:34.732" endtime="20220823 14:04:35.086"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:34.731" endtime="20220823 14:04:35.086"/>
+</kw>
+<msg timestamp="20220823 14:04:35.087" level="INFO">Repeating keyword, round 69/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:35.093" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:35.088" endtime="20220823 14:04:35.399"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:35.087" endtime="20220823 14:04:35.399"/>
+</kw>
+<msg timestamp="20220823 14:04:35.400" level="INFO">Repeating keyword, round 70/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:35.403" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:35.402" endtime="20220823 14:04:35.711"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:35.401" endtime="20220823 14:04:35.711"/>
+</kw>
+<msg timestamp="20220823 14:04:35.711" level="INFO">Repeating keyword, round 71/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:35.714" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:35.713" endtime="20220823 14:04:35.987"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:35.712" endtime="20220823 14:04:35.988"/>
+</kw>
+<msg timestamp="20220823 14:04:35.988" level="INFO">Repeating keyword, round 72/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:35.993" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:35.991" endtime="20220823 14:04:36.261"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:35.988" endtime="20220823 14:04:36.262"/>
+</kw>
+<msg timestamp="20220823 14:04:36.262" level="INFO">Repeating keyword, round 73/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:36.265" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:36.264" endtime="20220823 14:04:36.582"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:36.263" endtime="20220823 14:04:36.582"/>
+</kw>
+<msg timestamp="20220823 14:04:36.583" level="INFO">Repeating keyword, round 74/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:36.585" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:36.584" endtime="20220823 14:04:36.868"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:36.583" endtime="20220823 14:04:36.869"/>
+</kw>
+<msg timestamp="20220823 14:04:36.869" level="INFO">Repeating keyword, round 75/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:36.872" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:36.870" endtime="20220823 14:04:37.229"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:36.869" endtime="20220823 14:04:37.230"/>
+</kw>
+<msg timestamp="20220823 14:04:37.230" level="INFO">Repeating keyword, round 76/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:37.234" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:37.232" endtime="20220823 14:04:37.540"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:37.230" endtime="20220823 14:04:37.541"/>
+</kw>
+<msg timestamp="20220823 14:04:37.541" level="INFO">Repeating keyword, round 77/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:37.543" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:37.542" endtime="20220823 14:04:37.901"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:37.541" endtime="20220823 14:04:37.901"/>
+</kw>
+<msg timestamp="20220823 14:04:37.901" level="INFO">Repeating keyword, round 78/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:37.905" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:37.903" endtime="20220823 14:04:38.224"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:37.902" endtime="20220823 14:04:38.224"/>
+</kw>
+<msg timestamp="20220823 14:04:38.225" level="INFO">Repeating keyword, round 79/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:38.234" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:38.226" endtime="20220823 14:04:38.550"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:38.225" endtime="20220823 14:04:38.551"/>
+</kw>
+<msg timestamp="20220823 14:04:38.551" level="INFO">Repeating keyword, round 80/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:38.554" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:38.552" endtime="20220823 14:04:38.900"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:38.551" endtime="20220823 14:04:38.900"/>
+</kw>
+<msg timestamp="20220823 14:04:38.900" level="INFO">Repeating keyword, round 81/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:38.904" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:38.903" endtime="20220823 14:04:39.186"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:38.902" endtime="20220823 14:04:39.186"/>
+</kw>
+<msg timestamp="20220823 14:04:39.187" level="INFO">Repeating keyword, round 82/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:39.196" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:39.194" endtime="20220823 14:04:39.498"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:39.192" endtime="20220823 14:04:39.498"/>
+</kw>
+<msg timestamp="20220823 14:04:39.501" level="INFO">Repeating keyword, round 83/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:39.508" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:39.503" endtime="20220823 14:04:39.797"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:39.502" endtime="20220823 14:04:39.798"/>
+</kw>
+<msg timestamp="20220823 14:04:39.798" level="INFO">Repeating keyword, round 84/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:39.804" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:39.803" endtime="20220823 14:04:40.108"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:39.798" endtime="20220823 14:04:40.108"/>
+</kw>
+<msg timestamp="20220823 14:04:40.108" level="INFO">Repeating keyword, round 85/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:40.118" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:40.113" endtime="20220823 14:04:40.492"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:40.112" endtime="20220823 14:04:40.494"/>
+</kw>
+<msg timestamp="20220823 14:04:40.495" level="INFO">Repeating keyword, round 86/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:40.502" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:40.501" endtime="20220823 14:04:40.790"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:40.495" endtime="20220823 14:04:40.800"/>
+</kw>
+<msg timestamp="20220823 14:04:40.800" level="INFO">Repeating keyword, round 87/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:40.803" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:40.802" endtime="20220823 14:04:41.136"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:40.800" endtime="20220823 14:04:41.136"/>
+</kw>
+<msg timestamp="20220823 14:04:41.137" level="INFO">Repeating keyword, round 88/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:41.146" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:41.144" endtime="20220823 14:04:41.507"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:41.137" endtime="20220823 14:04:41.516"/>
+</kw>
+<msg timestamp="20220823 14:04:41.516" level="INFO">Repeating keyword, round 89/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:41.522" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:41.518" endtime="20220823 14:04:42.581"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:41.516" endtime="20220823 14:04:42.581"/>
+</kw>
+<msg timestamp="20220823 14:04:42.581" level="INFO">Repeating keyword, round 90/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:42.584" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:42.583" endtime="20220823 14:04:42.936"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:42.582" endtime="20220823 14:04:42.937"/>
+</kw>
+<msg timestamp="20220823 14:04:42.937" level="INFO">Repeating keyword, round 91/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:42.950" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:42.938" endtime="20220823 14:04:43.385"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:42.937" endtime="20220823 14:04:43.385"/>
+</kw>
+<msg timestamp="20220823 14:04:43.386" level="INFO">Repeating keyword, round 92/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:43.394" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:43.387" endtime="20220823 14:04:43.802"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:43.386" endtime="20220823 14:04:43.803"/>
+</kw>
+<msg timestamp="20220823 14:04:43.803" level="INFO">Repeating keyword, round 93/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:43.806" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:43.805" endtime="20220823 14:04:44.187"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:43.803" endtime="20220823 14:04:44.197"/>
+</kw>
+<msg timestamp="20220823 14:04:44.197" level="INFO">Repeating keyword, round 94/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:44.209" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:44.199" endtime="20220823 14:04:44.827"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:44.198" endtime="20220823 14:04:44.828"/>
+</kw>
+<msg timestamp="20220823 14:04:44.828" level="INFO">Repeating keyword, round 95/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:44.840" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:44.829" endtime="20220823 14:04:45.298"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:44.828" endtime="20220823 14:04:45.308"/>
+</kw>
+<msg timestamp="20220823 14:04:45.309" level="INFO">Repeating keyword, round 96/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:45.320" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:45.310" endtime="20220823 14:04:45.747"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:45.309" endtime="20220823 14:04:45.748"/>
+</kw>
+<msg timestamp="20220823 14:04:45.748" level="INFO">Repeating keyword, round 97/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:45.760" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:45.750" endtime="20220823 14:04:46.577"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:45.749" endtime="20220823 14:04:46.587"/>
+</kw>
+<msg timestamp="20220823 14:04:46.587" level="INFO">Repeating keyword, round 98/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:46.590" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:46.589" endtime="20220823 14:04:47.202"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:46.587" endtime="20220823 14:04:47.203"/>
+</kw>
+<msg timestamp="20220823 14:04:47.212" level="INFO">Repeating keyword, round 99/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:47.224" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:47.214" endtime="20220823 14:04:47.644"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:47.212" endtime="20220823 14:04:47.654"/>
+</kw>
+<msg timestamp="20220823 14:04:47.654" level="INFO">Repeating keyword, round 100/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:47.666" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:47.656" endtime="20220823 14:04:48.077"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:47.655" endtime="20220823 14:04:48.078"/>
+</kw>
+<msg timestamp="20220823 14:04:48.087" level="INFO">Repeating keyword, round 101/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:48.093" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:48.089" endtime="20220823 14:04:48.474"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:48.087" endtime="20220823 14:04:48.484"/>
+</kw>
+<msg timestamp="20220823 14:04:48.484" level="INFO">Repeating keyword, round 102/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:48.496" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:48.486" endtime="20220823 14:04:49.000"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:48.485" endtime="20220823 14:04:49.010"/>
+</kw>
+<msg timestamp="20220823 14:04:49.010" level="INFO">Repeating keyword, round 103/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:49.022" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:49.012" endtime="20220823 14:04:49.702"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:49.010" endtime="20220823 14:04:49.703"/>
+</kw>
+<msg timestamp="20220823 14:04:49.703" level="INFO">Repeating keyword, round 104/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:49.706" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:49.705" endtime="20220823 14:04:50.070"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:49.703" endtime="20220823 14:04:50.080"/>
+</kw>
+<msg timestamp="20220823 14:04:50.080" level="INFO">Repeating keyword, round 105/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:50.092" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:50.082" endtime="20220823 14:04:50.875"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:50.081" endtime="20220823 14:04:50.875"/>
+</kw>
+<msg timestamp="20220823 14:04:50.885" level="INFO">Repeating keyword, round 106/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:50.897" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:50.887" endtime="20220823 14:04:51.523"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:50.885" endtime="20220823 14:04:51.524"/>
+</kw>
+<msg timestamp="20220823 14:04:51.524" level="INFO">Repeating keyword, round 107/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:51.536" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:51.535" endtime="20220823 14:04:51.932"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:51.527" endtime="20220823 14:04:51.933"/>
+</kw>
+<msg timestamp="20220823 14:04:51.933" level="INFO">Repeating keyword, round 108/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:51.944" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:51.943" endtime="20220823 14:04:52.414"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:51.933" endtime="20220823 14:04:52.424"/>
+</kw>
+<msg timestamp="20220823 14:04:52.424" level="INFO">Repeating keyword, round 109/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:52.436" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:52.426" endtime="20220823 14:04:52.846"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:52.425" endtime="20220823 14:04:52.856"/>
+</kw>
+<msg timestamp="20220823 14:04:52.857" level="INFO">Repeating keyword, round 110/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:52.868" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:52.858" endtime="20220823 14:04:53.278"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:52.857" endtime="20220823 14:04:53.279"/>
+</kw>
+<msg timestamp="20220823 14:04:53.279" level="INFO">Repeating keyword, round 111/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:53.291" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:53.290" endtime="20220823 14:04:53.760"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:53.279" endtime="20220823 14:04:53.770"/>
+</kw>
+<msg timestamp="20220823 14:04:53.770" level="INFO">Repeating keyword, round 112/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:53.775" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:53.772" endtime="20220823 14:04:54.204"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:53.771" endtime="20220823 14:04:54.204"/>
+</kw>
+<msg timestamp="20220823 14:04:54.214" level="INFO">Repeating keyword, round 113/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:54.216" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:54.215" endtime="20220823 14:04:54.613"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:54.214" endtime="20220823 14:04:54.623"/>
+</kw>
+<msg timestamp="20220823 14:04:54.624" level="INFO">Repeating keyword, round 114/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:54.635" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:54.625" endtime="20220823 14:04:55.009"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:54.624" endtime="20220823 14:04:55.019"/>
+</kw>
+<msg timestamp="20220823 14:04:55.019" level="INFO">Repeating keyword, round 115/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:55.022" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:55.021" endtime="20220823 14:04:55.488"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:55.019" endtime="20220823 14:04:55.488"/>
+</kw>
+<msg timestamp="20220823 14:04:55.489" level="INFO">Repeating keyword, round 116/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:55.497" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:55.490" endtime="20220823 14:04:55.887"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:55.489" endtime="20220823 14:04:55.887"/>
+</kw>
+<msg timestamp="20220823 14:04:55.887" level="INFO">Repeating keyword, round 117/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:55.899" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:55.898" endtime="20220823 14:04:56.317"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:55.897" endtime="20220823 14:04:56.317"/>
+</kw>
+<msg timestamp="20220823 14:04:56.318" level="INFO">Repeating keyword, round 118/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:56.329" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:56.319" endtime="20220823 14:04:56.702"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:56.318" endtime="20220823 14:04:56.703"/>
+</kw>
+<msg timestamp="20220823 14:04:56.703" level="INFO">Repeating keyword, round 119/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:56.715" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:56.705" endtime="20220823 14:04:57.233"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:56.703" endtime="20220823 14:04:57.243"/>
+</kw>
+<msg timestamp="20220823 14:04:57.244" level="INFO">Repeating keyword, round 120/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:57.256" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:57.245" endtime="20220823 14:04:57.713"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:57.244" endtime="20220823 14:04:57.723"/>
+</kw>
+<msg timestamp="20220823 14:04:57.723" level="INFO">Repeating keyword, round 121/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:57.735" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:57.725" endtime="20220823 14:04:58.204"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:57.724" endtime="20220823 14:04:58.205"/>
+</kw>
+<msg timestamp="20220823 14:04:58.205" level="INFO">Repeating keyword, round 122/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:58.217" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:58.206" endtime="20220823 14:04:58.675"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:58.205" endtime="20220823 14:04:58.685"/>
+</kw>
+<msg timestamp="20220823 14:04:58.685" level="INFO">Repeating keyword, round 123/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:58.697" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:58.687" endtime="20220823 14:04:59.286"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:58.686" endtime="20220823 14:04:59.287"/>
+</kw>
+<msg timestamp="20220823 14:04:59.287" level="INFO">Repeating keyword, round 124/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:59.299" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:59.288" endtime="20220823 14:04:59.672"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:59.287" endtime="20220823 14:04:59.682"/>
+</kw>
+<msg timestamp="20220823 14:04:59.682" level="INFO">Repeating keyword, round 125/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:04:59.684" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:04:59.683" endtime="20220823 14:05:00.154"/>
+</kw>
+<status status="PASS" starttime="20220823 14:04:59.682" endtime="20220823 14:05:00.163"/>
+</kw>
+<msg timestamp="20220823 14:05:00.164" level="INFO">Repeating keyword, round 126/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:00.175" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:00.165" endtime="20220823 14:05:00.574"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:00.164" endtime="20220823 14:05:00.574"/>
+</kw>
+<msg timestamp="20220823 14:05:00.584" level="INFO">Repeating keyword, round 127/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:00.596" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:00.586" endtime="20220823 14:05:01.102"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:00.584" endtime="20220823 14:05:01.112"/>
+</kw>
+<msg timestamp="20220823 14:05:01.112" level="INFO">Repeating keyword, round 128/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:01.124" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:01.114" endtime="20220823 14:05:01.499"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:01.112" endtime="20220823 14:05:01.509"/>
+</kw>
+<msg timestamp="20220823 14:05:01.509" level="INFO">Repeating keyword, round 129/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:01.521" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:01.511" endtime="20220823 14:05:01.944"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:01.510" endtime="20220823 14:05:01.954"/>
+</kw>
+<msg timestamp="20220823 14:05:01.954" level="INFO">Repeating keyword, round 130/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:01.966" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:01.956" endtime="20220823 14:05:02.376"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:01.955" endtime="20220823 14:05:02.386"/>
+</kw>
+<msg timestamp="20220823 14:05:02.386" level="INFO">Repeating keyword, round 131/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:02.398" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:02.388" endtime="20220823 14:05:02.881"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:02.386" endtime="20220823 14:05:02.881"/>
+</kw>
+<msg timestamp="20220823 14:05:02.891" level="INFO">Repeating keyword, round 132/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:02.903" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:02.893" endtime="20220823 14:05:03.350"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:02.891" endtime="20220823 14:05:03.360"/>
+</kw>
+<msg timestamp="20220823 14:05:03.360" level="INFO">Repeating keyword, round 133/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:03.372" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:03.362" endtime="20220823 14:05:03.840"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:03.360" endtime="20220823 14:05:03.841"/>
+</kw>
+<msg timestamp="20220823 14:05:03.841" level="INFO">Repeating keyword, round 134/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:03.853" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:03.852" endtime="20220823 14:05:04.347"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:03.841" endtime="20220823 14:05:04.357"/>
+</kw>
+<msg timestamp="20220823 14:05:04.357" level="INFO">Repeating keyword, round 135/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:04.369" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:04.359" endtime="20220823 14:05:05.199"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:04.358" endtime="20220823 14:05:05.200"/>
+</kw>
+<msg timestamp="20220823 14:05:05.200" level="INFO">Repeating keyword, round 136/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:05.212" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:05.211" endtime="20220823 14:05:08.407"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:05.200" endtime="20220823 14:05:08.408"/>
+</kw>
+<msg timestamp="20220823 14:05:08.408" level="INFO">Repeating keyword, round 137/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:08.420" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:08.410" endtime="20220823 14:05:09.262"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:08.408" endtime="20220823 14:05:09.262"/>
+</kw>
+<msg timestamp="20220823 14:05:09.272" level="INFO">Repeating keyword, round 138/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:09.284" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:09.274" endtime="20220823 14:05:09.863"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:09.272" endtime="20220823 14:05:09.864"/>
+</kw>
+<msg timestamp="20220823 14:05:09.870" level="INFO">Repeating keyword, round 139/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:09.885" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:09.874" endtime="20220823 14:05:10.439"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:09.873" endtime="20220823 14:05:10.440"/>
+</kw>
+<msg timestamp="20220823 14:05:10.440" level="INFO">Repeating keyword, round 140/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:10.452" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:10.451" endtime="20220823 14:05:10.943"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:10.440" endtime="20220823 14:05:10.944"/>
+</kw>
+<msg timestamp="20220823 14:05:10.944" level="INFO">Repeating keyword, round 141/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:10.957" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:10.949" endtime="20220823 14:05:11.627"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:10.944" endtime="20220823 14:05:11.627"/>
+</kw>
+<msg timestamp="20220823 14:05:11.628" level="INFO">Repeating keyword, round 142/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:11.630" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:11.629" endtime="20220823 14:05:12.459"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:11.628" endtime="20220823 14:05:12.469"/>
+</kw>
+<msg timestamp="20220823 14:05:12.469" level="INFO">Repeating keyword, round 143/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:12.481" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:12.471" endtime="20220823 14:05:13.024"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:12.469" endtime="20220823 14:05:13.025"/>
+</kw>
+<msg timestamp="20220823 14:05:13.034" level="INFO">Repeating keyword, round 144/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:13.046" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:13.036" endtime="20220823 14:05:13.516"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:13.035" endtime="20220823 14:05:13.516"/>
+</kw>
+<msg timestamp="20220823 14:05:13.517" level="INFO">Repeating keyword, round 145/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:13.529" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:13.528" endtime="20220823 14:05:14.065"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:13.517" endtime="20220823 14:05:14.066"/>
+</kw>
+<msg timestamp="20220823 14:05:14.066" level="INFO">Repeating keyword, round 146/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:14.069" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:14.068" endtime="20220823 14:05:14.531"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:14.066" endtime="20220823 14:05:14.532"/>
+</kw>
+<msg timestamp="20220823 14:05:14.532" level="INFO">Repeating keyword, round 147/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:14.535" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:14.534" endtime="20220823 14:05:14.814"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:14.533" endtime="20220823 14:05:14.815"/>
+</kw>
+<msg timestamp="20220823 14:05:14.815" level="INFO">Repeating keyword, round 148/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:14.826" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:14.825" endtime="20220823 14:05:15.440"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:14.815" endtime="20220823 14:05:15.450"/>
+</kw>
+<msg timestamp="20220823 14:05:15.450" level="INFO">Repeating keyword, round 149/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:15.452" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:15.451" endtime="20220823 14:05:16.686"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:15.450" endtime="20220823 14:05:16.687"/>
+</kw>
+<msg timestamp="20220823 14:05:16.687" level="INFO">Repeating keyword, round 150/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:16.690" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:16.688" endtime="20220823 14:05:17.506"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:16.687" endtime="20220823 14:05:17.507"/>
+</kw>
+<msg timestamp="20220823 14:05:17.507" level="INFO">Repeating keyword, round 151/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:17.519" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:17.518" endtime="20220823 14:05:18.131"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:17.507" endtime="20220823 14:05:18.132"/>
+</kw>
+<msg timestamp="20220823 14:05:18.132" level="INFO">Repeating keyword, round 152/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:18.143" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:18.142" endtime="20220823 14:05:18.513"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:18.132" endtime="20220823 14:05:18.513"/>
+</kw>
+<msg timestamp="20220823 14:05:18.514" level="INFO">Repeating keyword, round 153/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:18.516" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:18.515" endtime="20220823 14:05:19.946"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:18.514" endtime="20220823 14:05:19.950"/>
+</kw>
+<msg timestamp="20220823 14:05:19.950" level="INFO">Repeating keyword, round 154/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:19.956" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:19.951" endtime="20220823 14:05:20.547"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:19.950" endtime="20220823 14:05:20.557"/>
+</kw>
+<msg timestamp="20220823 14:05:20.557" level="INFO">Repeating keyword, round 155/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:20.559" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:20.559" endtime="20220823 14:05:21.352"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:20.558" endtime="20220823 14:05:21.362"/>
+</kw>
+<msg timestamp="20220823 14:05:21.362" level="INFO">Repeating keyword, round 156/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:21.374" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:21.364" endtime="20220823 14:05:22.265"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:21.363" endtime="20220823 14:05:22.266"/>
+</kw>
+<msg timestamp="20220823 14:05:22.266" level="INFO">Repeating keyword, round 157/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:22.278" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:22.277" endtime="20220823 14:05:24.440"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:22.276" endtime="20220823 14:05:24.441"/>
+</kw>
+<msg timestamp="20220823 14:05:24.441" level="INFO">Repeating keyword, round 158/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:24.453" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:24.452" endtime="20220823 14:05:26.819"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:24.441" endtime="20220823 14:05:26.820"/>
+</kw>
+<msg timestamp="20220823 14:05:26.820" level="INFO">Repeating keyword, round 159/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:26.832" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:26.831" endtime="20220823 14:05:27.539"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:26.820" endtime="20220823 14:05:27.539"/>
+</kw>
+<msg timestamp="20220823 14:05:27.540" level="INFO">Repeating keyword, round 160/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:27.552" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:27.541" endtime="20220823 14:05:28.140"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:27.540" endtime="20220823 14:05:28.140"/>
+</kw>
+<msg timestamp="20220823 14:05:28.141" level="INFO">Repeating keyword, round 161/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:28.153" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:28.142" endtime="20220823 14:05:28.683"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:28.141" endtime="20220823 14:05:28.693"/>
+</kw>
+<msg timestamp="20220823 14:05:28.693" level="INFO">Repeating keyword, round 162/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:28.705" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:28.695" endtime="20220823 14:05:29.186"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:28.694" endtime="20220823 14:05:29.187"/>
+</kw>
+<msg timestamp="20220823 14:05:29.187" level="INFO">Repeating keyword, round 163/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:29.199" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:29.188" endtime="20220823 14:05:29.703"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:29.187" endtime="20220823 14:05:29.703"/>
+</kw>
+<msg timestamp="20220823 14:05:29.704" level="INFO">Repeating keyword, round 164/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:29.715" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:29.705" endtime="20220823 14:05:30.185"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:29.704" endtime="20220823 14:05:30.195"/>
+</kw>
+<msg timestamp="20220823 14:05:30.195" level="INFO">Repeating keyword, round 165/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:30.207" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:30.197" endtime="20220823 14:05:30.702"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:30.196" endtime="20220823 14:05:30.712"/>
+</kw>
+<msg timestamp="20220823 14:05:30.712" level="INFO">Repeating keyword, round 166/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:30.724" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:30.714" endtime="20220823 14:05:31.169"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:30.713" endtime="20220823 14:05:31.169"/>
+</kw>
+<msg timestamp="20220823 14:05:31.170" level="INFO">Repeating keyword, round 167/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:31.174" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:31.171" endtime="20220823 14:05:31.676"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:31.170" endtime="20220823 14:05:31.676"/>
+</kw>
+<msg timestamp="20220823 14:05:31.686" level="INFO">Repeating keyword, round 168/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:31.688" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:31.687" endtime="20220823 14:05:32.361"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:31.686" endtime="20220823 14:05:32.371"/>
+</kw>
+<msg timestamp="20220823 14:05:32.371" level="INFO">Repeating keyword, round 169/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:32.383" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:32.373" endtime="20220823 14:05:32.865"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:32.372" endtime="20220823 14:05:32.865"/>
+</kw>
+<msg timestamp="20220823 14:05:32.865" level="INFO">Repeating keyword, round 170/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:32.877" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:32.876" endtime="20220823 14:05:33.286"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:32.875" endtime="20220823 14:05:33.296"/>
+</kw>
+<msg timestamp="20220823 14:05:33.296" level="INFO">Repeating keyword, round 171/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:33.308" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:33.298" endtime="20220823 14:05:33.764"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:33.296" endtime="20220823 14:05:33.765"/>
+</kw>
+<msg timestamp="20220823 14:05:33.765" level="INFO">Repeating keyword, round 172/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:33.779" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:33.767" endtime="20220823 14:05:34.510"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:33.766" endtime="20220823 14:05:34.510"/>
+</kw>
+<msg timestamp="20220823 14:05:34.511" level="INFO">Repeating keyword, round 173/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:34.522" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:34.512" endtime="20220823 14:05:35.449"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:34.511" endtime="20220823 14:05:35.459"/>
+</kw>
+<msg timestamp="20220823 14:05:35.459" level="INFO">Repeating keyword, round 174/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:35.471" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:35.461" endtime="20220823 14:05:35.940"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:35.460" endtime="20220823 14:05:35.941"/>
+</kw>
+<msg timestamp="20220823 14:05:35.941" level="INFO">Repeating keyword, round 175/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:35.953" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:35.952" endtime="20220823 14:05:36.395"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:35.942" endtime="20220823 14:05:36.396"/>
+</kw>
+<msg timestamp="20220823 14:05:36.397" level="INFO">Repeating keyword, round 176/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:36.399" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:36.398" endtime="20220823 14:05:36.975"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:36.397" endtime="20220823 14:05:36.975"/>
+</kw>
+<msg timestamp="20220823 14:05:36.985" level="INFO">Repeating keyword, round 177/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:36.993" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:36.987" endtime="20220823 14:05:41.867"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:36.985" endtime="20220823 14:05:41.878"/>
+</kw>
+<msg timestamp="20220823 14:05:41.878" level="INFO">Repeating keyword, round 178/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:41.901" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:41.890" endtime="20220823 14:05:44.653"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:41.878" endtime="20220823 14:05:44.654"/>
+</kw>
+<msg timestamp="20220823 14:05:44.654" level="INFO">Repeating keyword, round 179/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:44.665" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:44.655" endtime="20220823 14:05:45.075"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:44.654" endtime="20220823 14:05:45.085"/>
+</kw>
+<msg timestamp="20220823 14:05:45.085" level="INFO">Repeating keyword, round 180/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:45.087" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:45.086" endtime="20220823 14:05:45.591"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:45.086" endtime="20220823 14:05:45.591"/>
+</kw>
+<msg timestamp="20220823 14:05:45.592" level="INFO">Repeating keyword, round 181/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:45.603" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:45.602" endtime="20220823 14:05:46.504"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:45.592" endtime="20220823 14:05:46.505"/>
+</kw>
+<msg timestamp="20220823 14:05:46.505" level="INFO">Repeating keyword, round 182/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:46.517" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:46.506" endtime="20220823 14:05:46.998"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:46.505" endtime="20220823 14:05:47.008"/>
+</kw>
+<msg timestamp="20220823 14:05:47.008" level="INFO">Repeating keyword, round 183/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:47.020" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:47.010" endtime="20220823 14:05:47.755"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:47.009" endtime="20220823 14:05:47.765"/>
+</kw>
+<msg timestamp="20220823 14:05:47.765" level="INFO">Repeating keyword, round 184/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:47.777" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:47.767" endtime="20220823 14:05:48.218"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:47.766" endtime="20220823 14:05:48.219"/>
+</kw>
+<msg timestamp="20220823 14:05:48.219" level="INFO">Repeating keyword, round 185/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:48.222" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:48.220" endtime="20220823 14:05:48.547"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:48.219" endtime="20220823 14:05:48.547"/>
+</kw>
+<msg timestamp="20220823 14:05:48.547" level="INFO">Repeating keyword, round 186/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:48.550" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:48.549" endtime="20220823 14:05:49.269"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:48.548" endtime="20220823 14:05:49.269"/>
+</kw>
+<msg timestamp="20220823 14:05:49.269" level="INFO">Repeating keyword, round 187/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:49.272" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:49.271" endtime="20220823 14:05:49.678"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:49.270" endtime="20220823 14:05:49.688"/>
+</kw>
+<msg timestamp="20220823 14:05:49.688" level="INFO">Repeating keyword, round 188/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:49.695" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:49.690" endtime="20220823 14:05:50.580"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:49.688" endtime="20220823 14:05:50.590"/>
+</kw>
+<msg timestamp="20220823 14:05:50.590" level="INFO">Repeating keyword, round 189/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:50.602" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:50.592" endtime="20220823 14:05:52.106"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:50.591" endtime="20220823 14:05:52.116"/>
+</kw>
+<msg timestamp="20220823 14:05:52.116" level="INFO">Repeating keyword, round 190/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:52.124" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:52.118" endtime="20220823 14:05:52.614"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:52.117" endtime="20220823 14:05:52.615"/>
+</kw>
+<msg timestamp="20220823 14:05:52.615" level="INFO">Repeating keyword, round 191/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:52.618" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:52.617" endtime="20220823 14:05:52.875"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:52.616" endtime="20220823 14:05:52.885"/>
+</kw>
+<msg timestamp="20220823 14:05:52.885" level="INFO">Repeating keyword, round 192/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:52.887" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:52.886" endtime="20220823 14:05:53.320"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:52.885" endtime="20220823 14:05:53.330"/>
+</kw>
+<msg timestamp="20220823 14:05:53.330" level="INFO">Repeating keyword, round 193/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:53.342" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:53.332" endtime="20220823 14:05:53.644"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:53.330" endtime="20220823 14:05:53.644"/>
+</kw>
+<msg timestamp="20220823 14:05:53.645" level="INFO">Repeating keyword, round 194/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:53.648" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:53.646" endtime="20220823 14:05:54.264"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:53.645" endtime="20220823 14:05:54.265"/>
+</kw>
+<msg timestamp="20220823 14:05:54.265" level="INFO">Repeating keyword, round 195/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:54.268" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:54.267" endtime="20220823 14:05:55.036"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:54.266" endtime="20220823 14:05:55.036"/>
+</kw>
+<msg timestamp="20220823 14:05:55.037" level="INFO">Repeating keyword, round 196/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:55.044" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:55.038" endtime="20220823 14:05:55.481"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:55.037" endtime="20220823 14:05:55.482"/>
+</kw>
+<msg timestamp="20220823 14:05:55.482" level="INFO">Repeating keyword, round 197/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:55.494" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:55.493" endtime="20220823 14:05:55.867"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:55.483" endtime="20220823 14:05:55.877"/>
+</kw>
+<msg timestamp="20220823 14:05:55.877" level="INFO">Repeating keyword, round 198/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:55.889" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:55.879" endtime="20220823 14:05:56.240"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:55.878" endtime="20220823 14:05:56.242"/>
+</kw>
+<msg timestamp="20220823 14:05:56.242" level="INFO">Repeating keyword, round 199/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:56.245" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:56.244" endtime="20220823 14:05:56.673"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:56.243" endtime="20220823 14:05:56.673"/>
+</kw>
+<msg timestamp="20220823 14:05:56.674" level="INFO">Repeating keyword, round 200/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:56.677" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:56.675" endtime="20220823 14:05:57.598"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:56.674" endtime="20220823 14:05:57.608"/>
+</kw>
+<msg timestamp="20220823 14:05:57.608" level="INFO">Repeating keyword, round 201/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:57.616" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:57.610" endtime="20220823 14:05:58.125"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:57.608" endtime="20220823 14:05:58.126"/>
+</kw>
+<msg timestamp="20220823 14:05:58.126" level="INFO">Repeating keyword, round 202/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:58.138" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:58.127" endtime="20220823 14:05:58.556"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:58.126" endtime="20220823 14:05:58.557"/>
+</kw>
+<msg timestamp="20220823 14:05:58.557" level="INFO">Repeating keyword, round 203/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:58.559" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:58.558" endtime="20220823 14:05:59.134"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:58.557" endtime="20220823 14:05:59.135"/>
+</kw>
+<msg timestamp="20220823 14:05:59.135" level="INFO">Repeating keyword, round 204/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:59.147" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:59.136" endtime="20220823 14:05:59.521"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:59.135" endtime="20220823 14:05:59.527"/>
+</kw>
+<msg timestamp="20220823 14:05:59.527" level="INFO">Repeating keyword, round 205/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:59.533" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:59.532" endtime="20220823 14:05:59.917"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:59.531" endtime="20220823 14:05:59.927"/>
+</kw>
+<msg timestamp="20220823 14:05:59.927" level="INFO">Repeating keyword, round 206/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:05:59.939" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:05:59.929" endtime="20220823 14:06:00.843"/>
+</kw>
+<status status="PASS" starttime="20220823 14:05:59.927" endtime="20220823 14:06:00.853"/>
+</kw>
+<msg timestamp="20220823 14:06:00.853" level="INFO">Repeating keyword, round 207/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:00.865" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:00.855" endtime="20220823 14:06:01.317"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:00.854" endtime="20220823 14:06:01.318"/>
+</kw>
+<msg timestamp="20220823 14:06:01.318" level="INFO">Repeating keyword, round 208/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:01.322" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:01.321" endtime="20220823 14:06:01.659"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:01.318" endtime="20220823 14:06:01.660"/>
+</kw>
+<msg timestamp="20220823 14:06:01.660" level="INFO">Repeating keyword, round 209/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:01.672" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:01.670" endtime="20220823 14:06:02.105"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:01.660" endtime="20220823 14:06:02.115"/>
+</kw>
+<msg timestamp="20220823 14:06:02.115" level="INFO">Repeating keyword, round 210/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:02.117" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:02.116" endtime="20220823 14:06:02.740"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:02.115" endtime="20220823 14:06:02.741"/>
+</kw>
+<msg timestamp="20220823 14:06:02.741" level="INFO">Repeating keyword, round 211/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:02.746" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:02.742" endtime="20220823 14:06:03.102"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:02.741" endtime="20220823 14:06:03.102"/>
+</kw>
+<msg timestamp="20220823 14:06:03.112" level="INFO">Repeating keyword, round 212/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:03.124" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:03.114" endtime="20220823 14:06:03.463"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:03.112" endtime="20220823 14:06:03.473"/>
+</kw>
+<msg timestamp="20220823 14:06:03.474" level="INFO">Repeating keyword, round 213/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:03.485" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:03.475" endtime="20220823 14:06:04.446"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:03.474" endtime="20220823 14:06:04.446"/>
+</kw>
+<msg timestamp="20220823 14:06:04.447" level="INFO">Repeating keyword, round 214/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:04.449" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:04.448" endtime="20220823 14:06:05.001"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:04.447" endtime="20220823 14:06:05.011"/>
+</kw>
+<msg timestamp="20220823 14:06:05.011" level="INFO">Repeating keyword, round 215/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:05.023" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:05.013" endtime="20220823 14:06:05.661"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:05.012" endtime="20220823 14:06:05.662"/>
+</kw>
+<msg timestamp="20220823 14:06:05.662" level="INFO">Repeating keyword, round 216/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:05.674" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:05.673" endtime="20220823 14:06:06.129"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:05.662" endtime="20220823 14:06:06.139"/>
+</kw>
+<msg timestamp="20220823 14:06:06.139" level="INFO">Repeating keyword, round 217/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:06.142" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:06.141" endtime="20220823 14:06:06.814"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:06.139" endtime="20220823 14:06:06.824"/>
+</kw>
+<msg timestamp="20220823 14:06:06.824" level="INFO">Repeating keyword, round 218/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:06.836" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:06.826" endtime="20220823 14:06:07.330"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:06.825" endtime="20220823 14:06:07.330"/>
+</kw>
+<msg timestamp="20220823 14:06:07.336" level="INFO">Repeating keyword, round 219/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:07.342" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:07.341" endtime="20220823 14:06:07.739"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:07.340" endtime="20220823 14:06:07.749"/>
+</kw>
+<msg timestamp="20220823 14:06:07.749" level="INFO">Repeating keyword, round 220/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:07.751" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:07.750" endtime="20220823 14:06:08.184"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:07.749" endtime="20220823 14:06:08.194"/>
+</kw>
+<msg timestamp="20220823 14:06:08.195" level="INFO">Repeating keyword, round 221/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:08.206" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:08.196" endtime="20220823 14:06:08.644"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:08.195" endtime="20220823 14:06:08.644"/>
+</kw>
+<msg timestamp="20220823 14:06:08.645" level="INFO">Repeating keyword, round 222/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:08.647" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:08.646" endtime="20220823 14:06:09.661"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:08.645" endtime="20220823 14:06:09.661"/>
+</kw>
+<msg timestamp="20220823 14:06:09.661" level="INFO">Repeating keyword, round 223/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:09.673" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:09.672" endtime="20220823 14:06:10.191"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:09.662" endtime="20220823 14:06:10.201"/>
+</kw>
+<msg timestamp="20220823 14:06:10.201" level="INFO">Repeating keyword, round 224/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:10.204" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:10.203" endtime="20220823 14:06:11.099"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:10.201" endtime="20220823 14:06:11.100"/>
+</kw>
+<msg timestamp="20220823 14:06:11.100" level="INFO">Repeating keyword, round 225/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:11.102" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:11.101" endtime="20220823 14:06:11.633"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:11.100" endtime="20220823 14:06:11.643"/>
+</kw>
+<msg timestamp="20220823 14:06:11.643" level="INFO">Repeating keyword, round 226/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:11.655" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:11.645" endtime="20220823 14:06:12.070"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:11.643" endtime="20220823 14:06:12.071"/>
+</kw>
+<msg timestamp="20220823 14:06:12.071" level="INFO">Repeating keyword, round 227/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:12.074" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:12.073" endtime="20220823 14:06:12.390"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:12.072" endtime="20220823 14:06:12.400"/>
+</kw>
+<msg timestamp="20220823 14:06:12.400" level="INFO">Repeating keyword, round 228/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:12.412" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:12.402" endtime="20220823 14:06:12.955"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:12.401" endtime="20220823 14:06:12.965"/>
+</kw>
+<msg timestamp="20220823 14:06:12.965" level="INFO">Repeating keyword, round 229/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:12.971" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:12.967" endtime="20220823 14:06:13.327"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:12.966" endtime="20220823 14:06:13.337"/>
+</kw>
+<msg timestamp="20220823 14:06:13.337" level="INFO">Repeating keyword, round 230/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:13.342" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:13.339" endtime="20220823 14:06:14.000"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:13.338" endtime="20220823 14:06:14.010"/>
+</kw>
+<msg timestamp="20220823 14:06:14.010" level="INFO">Repeating keyword, round 231/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:14.022" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:14.012" endtime="20220823 14:06:14.421"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:14.011" endtime="20220823 14:06:14.431"/>
+</kw>
+<msg timestamp="20220823 14:06:14.431" level="INFO">Repeating keyword, round 232/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:14.440" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:14.433" endtime="20220823 14:06:14.829"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:14.432" endtime="20220823 14:06:14.839"/>
+</kw>
+<msg timestamp="20220823 14:06:14.839" level="INFO">Repeating keyword, round 233/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:14.851" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:14.841" endtime="20220823 14:06:15.274"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:14.840" endtime="20220823 14:06:15.284"/>
+</kw>
+<msg timestamp="20220823 14:06:15.284" level="INFO">Repeating keyword, round 234/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:15.296" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:15.286" endtime="20220823 14:06:15.623"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:15.285" endtime="20220823 14:06:15.623"/>
+</kw>
+<msg timestamp="20220823 14:06:15.633" level="INFO">Repeating keyword, round 235/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:15.636" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:15.634" endtime="20220823 14:06:16.163"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:15.633" endtime="20220823 14:06:16.173"/>
+</kw>
+<msg timestamp="20220823 14:06:16.173" level="INFO">Repeating keyword, round 236/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:16.185" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:16.175" endtime="20220823 14:06:16.614"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:16.173" endtime="20220823 14:06:16.614"/>
+</kw>
+<msg timestamp="20220823 14:06:16.615" level="INFO">Repeating keyword, round 237/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:16.618" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:16.617" endtime="20220823 14:06:17.231"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:16.615" endtime="20220823 14:06:17.231"/>
+</kw>
+<msg timestamp="20220823 14:06:17.232" level="INFO">Repeating keyword, round 238/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:17.240" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:17.233" endtime="20220823 14:06:17.752"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:17.232" endtime="20220823 14:06:17.753"/>
+</kw>
+<msg timestamp="20220823 14:06:17.753" level="INFO">Repeating keyword, round 239/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:17.756" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:17.755" endtime="20220823 14:06:18.891"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:17.754" endtime="20220823 14:06:18.891"/>
+</kw>
+<msg timestamp="20220823 14:06:18.901" level="INFO">Repeating keyword, round 240/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:18.903" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:18.902" endtime="20220823 14:06:19.883"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:18.901" endtime="20220823 14:06:19.884"/>
+</kw>
+<msg timestamp="20220823 14:06:19.884" level="INFO">Repeating keyword, round 241/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:19.887" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:19.886" endtime="20220823 14:06:20.329"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:19.884" endtime="20220823 14:06:20.329"/>
+</kw>
+<msg timestamp="20220823 14:06:20.329" level="INFO">Repeating keyword, round 242/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:20.332" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:20.331" endtime="20220823 14:06:20.728"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:20.330" endtime="20220823 14:06:20.728"/>
+</kw>
+<msg timestamp="20220823 14:06:20.729" level="INFO">Repeating keyword, round 243/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:20.734" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:20.730" endtime="20220823 14:06:21.115"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:20.729" endtime="20220823 14:06:21.125"/>
+</kw>
+<msg timestamp="20220823 14:06:21.125" level="INFO">Repeating keyword, round 244/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:21.135" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:21.127" endtime="20220823 14:06:21.511"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:21.126" endtime="20220823 14:06:21.511"/>
+</kw>
+<msg timestamp="20220823 14:06:21.521" level="INFO">Repeating keyword, round 245/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:21.523" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:21.522" endtime="20220823 14:06:22.483"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:21.521" endtime="20220823 14:06:22.484"/>
+</kw>
+<msg timestamp="20220823 14:06:22.484" level="INFO">Repeating keyword, round 246/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:22.489" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:22.485" endtime="20220823 14:06:22.929"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:22.484" endtime="20220823 14:06:22.939"/>
+</kw>
+<msg timestamp="20220823 14:06:22.939" level="INFO">Repeating keyword, round 247/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:22.951" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:22.941" endtime="20220823 14:06:23.513"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:22.940" endtime="20220823 14:06:23.513"/>
+</kw>
+<msg timestamp="20220823 14:06:23.514" level="INFO">Repeating keyword, round 248/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:23.517" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:23.516" endtime="20220823 14:06:24.275"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:23.514" endtime="20220823 14:06:24.285"/>
+</kw>
+<msg timestamp="20220823 14:06:24.285" level="INFO">Repeating keyword, round 249/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:24.297" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:24.287" endtime="20220823 14:06:25.021"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:24.285" endtime="20220823 14:06:25.031"/>
+</kw>
+<msg timestamp="20220823 14:06:25.031" level="INFO">Repeating keyword, round 250/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:25.043" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:25.033" endtime="20220823 14:06:25.530"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:25.032" endtime="20220823 14:06:25.530"/>
+</kw>
+<msg timestamp="20220823 14:06:25.531" level="INFO">Repeating keyword, round 251/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:25.534" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:25.532" endtime="20220823 14:06:25.956"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:25.531" endtime="20220823 14:06:25.957"/>
+</kw>
+<msg timestamp="20220823 14:06:25.957" level="INFO">Repeating keyword, round 252/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:25.969" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:25.958" endtime="20220823 14:06:26.360"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:25.957" endtime="20220823 14:06:26.361"/>
+</kw>
+<msg timestamp="20220823 14:06:26.361" level="INFO">Repeating keyword, round 253/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:26.364" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:26.362" endtime="20220823 14:06:26.757"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:26.361" endtime="20220823 14:06:26.757"/>
+</kw>
+<msg timestamp="20220823 14:06:26.758" level="INFO">Repeating keyword, round 254/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:26.760" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:26.759" endtime="20220823 14:06:27.352"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:26.758" endtime="20220823 14:06:27.362"/>
+</kw>
+<msg timestamp="20220823 14:06:27.362" level="INFO">Repeating keyword, round 255/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:27.370" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:27.364" endtime="20220823 14:06:27.819"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:27.363" endtime="20220823 14:06:27.820"/>
+</kw>
+<msg timestamp="20220823 14:06:27.820" level="INFO">Repeating keyword, round 256/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:27.832" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:27.831" endtime="20220823 14:06:28.167"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:27.821" endtime="20220823 14:06:28.167"/>
+</kw>
+<msg timestamp="20220823 14:06:28.168" level="INFO">Repeating keyword, round 257/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:28.179" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:28.169" endtime="20220823 14:06:28.552"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:28.168" endtime="20220823 14:06:28.553"/>
+</kw>
+<msg timestamp="20220823 14:06:28.553" level="INFO">Repeating keyword, round 258/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:28.565" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:28.554" endtime="20220823 14:06:29.107"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:28.553" endtime="20220823 14:06:29.107"/>
+</kw>
+<msg timestamp="20220823 14:06:29.117" level="INFO">Repeating keyword, round 259/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:29.119" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:29.118" endtime="20220823 14:06:29.527"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:29.117" endtime="20220823 14:06:29.527"/>
+</kw>
+<msg timestamp="20220823 14:06:29.537" level="INFO">Repeating keyword, round 260/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:29.539" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:29.538" endtime="20220823 14:06:29.900"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:29.537" endtime="20220823 14:06:29.910"/>
+</kw>
+<msg timestamp="20220823 14:06:29.910" level="INFO">Repeating keyword, round 261/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:29.920" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:29.912" endtime="20220823 14:06:30.231"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:29.911" endtime="20220823 14:06:30.231"/>
+</kw>
+<msg timestamp="20220823 14:06:30.231" level="INFO">Repeating keyword, round 262/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:30.234" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:30.233" endtime="20220823 14:06:30.651"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:30.232" endtime="20220823 14:06:30.652"/>
+</kw>
+<msg timestamp="20220823 14:06:30.652" level="INFO">Repeating keyword, round 263/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:30.655" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:30.654" endtime="20220823 14:06:31.258"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:30.652" endtime="20220823 14:06:31.268"/>
+</kw>
+<msg timestamp="20220823 14:06:31.268" level="INFO">Repeating keyword, round 264/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:31.270" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:31.269" endtime="20220823 14:06:32.027"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:31.268" endtime="20220823 14:06:32.037"/>
+</kw>
+<msg timestamp="20220823 14:06:32.037" level="INFO">Repeating keyword, round 265/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:32.042" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:32.039" endtime="20220823 14:06:32.410"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:32.038" endtime="20220823 14:06:32.411"/>
+</kw>
+<msg timestamp="20220823 14:06:32.411" level="INFO">Repeating keyword, round 266/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:32.423" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:32.422" endtime="20220823 14:06:33.042"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:32.411" endtime="20220823 14:06:33.043"/>
+</kw>
+<msg timestamp="20220823 14:06:33.043" level="INFO">Repeating keyword, round 267/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:33.046" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:33.045" endtime="20220823 14:06:33.541"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:33.043" endtime="20220823 14:06:33.551"/>
+</kw>
+<msg timestamp="20220823 14:06:33.551" level="INFO">Repeating keyword, round 268/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:33.553" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:33.552" endtime="20220823 14:06:34.250"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:33.551" endtime="20220823 14:06:34.260"/>
+</kw>
+<msg timestamp="20220823 14:06:34.260" level="INFO">Repeating keyword, round 269/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:34.266" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:34.262" endtime="20220823 14:06:34.994"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:34.261" endtime="20220823 14:06:34.994"/>
+</kw>
+<msg timestamp="20220823 14:06:34.995" level="INFO">Repeating keyword, round 270/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:34.998" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:34.996" endtime="20220823 14:06:35.677"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:34.995" endtime="20220823 14:06:35.678"/>
+</kw>
+<msg timestamp="20220823 14:06:35.678" level="INFO">Repeating keyword, round 271/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:35.680" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:35.679" endtime="20220823 14:06:36.240"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:35.678" endtime="20220823 14:06:36.240"/>
+</kw>
+<msg timestamp="20220823 14:06:36.240" level="INFO">Repeating keyword, round 272/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:36.243" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:36.242" endtime="20220823 14:06:36.773"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:36.241" endtime="20220823 14:06:36.773"/>
+</kw>
+<msg timestamp="20220823 14:06:36.774" level="INFO">Repeating keyword, round 273/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:36.785" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:36.784" endtime="20220823 14:06:37.310"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:36.774" endtime="20220823 14:06:37.313"/>
+</kw>
+<msg timestamp="20220823 14:06:37.313" level="INFO">Repeating keyword, round 274/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:37.325" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:37.315" endtime="20220823 14:06:37.698"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:37.314" endtime="20220823 14:06:37.699"/>
+</kw>
+<msg timestamp="20220823 14:06:37.699" level="INFO">Repeating keyword, round 275/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:37.703" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:37.702" endtime="20220823 14:06:38.336"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:37.699" endtime="20220823 14:06:38.336"/>
+</kw>
+<msg timestamp="20220823 14:06:38.336" level="INFO">Repeating keyword, round 276/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:38.339" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:38.338" endtime="20220823 14:06:39.262"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:38.337" endtime="20220823 14:06:39.269"/>
+</kw>
+<msg timestamp="20220823 14:06:39.269" level="INFO">Repeating keyword, round 277/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:39.272" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:39.271" endtime="20220823 14:06:42.350"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:39.270" endtime="20220823 14:06:42.360"/>
+</kw>
+<msg timestamp="20220823 14:06:42.360" level="INFO">Repeating keyword, round 278/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:42.365" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:42.362" endtime="20220823 14:06:42.949"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:42.361" endtime="20220823 14:06:42.950"/>
+</kw>
+<msg timestamp="20220823 14:06:42.950" level="INFO">Repeating keyword, round 279/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:42.953" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:42.952" endtime="20220823 14:06:43.372"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:42.951" endtime="20220823 14:06:43.382"/>
+</kw>
+<msg timestamp="20220823 14:06:43.382" level="INFO">Repeating keyword, round 280/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:43.389" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:43.384" endtime="20220823 14:06:43.816"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:43.383" endtime="20220823 14:06:43.816"/>
+</kw>
+<msg timestamp="20220823 14:06:43.821" level="INFO">Repeating keyword, round 281/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:43.824" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:43.823" endtime="20220823 14:06:44.189"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:43.822" endtime="20220823 14:06:44.199"/>
+</kw>
+<msg timestamp="20220823 14:06:44.199" level="INFO">Repeating keyword, round 282/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:44.207" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:44.201" endtime="20220823 14:06:44.583"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:44.200" endtime="20220823 14:06:44.583"/>
+</kw>
+<msg timestamp="20220823 14:06:44.584" level="INFO">Repeating keyword, round 283/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:44.595" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:44.585" endtime="20220823 14:06:45.038"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:44.584" endtime="20220823 14:06:45.039"/>
+</kw>
+<msg timestamp="20220823 14:06:45.039" level="INFO">Repeating keyword, round 284/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:45.041" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:45.040" endtime="20220823 14:06:45.535"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:45.039" endtime="20220823 14:06:45.545"/>
+</kw>
+<msg timestamp="20220823 14:06:45.545" level="INFO">Repeating keyword, round 285/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:45.547" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:45.546" endtime="20220823 14:06:46.364"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:45.545" endtime="20220823 14:06:46.374"/>
+</kw>
+<msg timestamp="20220823 14:06:46.374" level="INFO">Repeating keyword, round 286/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:46.386" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:46.376" endtime="20220823 14:06:46.893"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:46.375" endtime="20220823 14:06:46.903"/>
+</kw>
+<msg timestamp="20220823 14:06:46.903" level="INFO">Repeating keyword, round 287/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:46.915" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:46.905" endtime="20220823 14:06:48.029"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:46.903" endtime="20220823 14:06:48.033"/>
+</kw>
+<msg timestamp="20220823 14:06:48.033" level="INFO">Repeating keyword, round 288/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:48.035" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:48.034" endtime="20220823 14:06:49.609"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:48.033" endtime="20220823 14:06:49.609"/>
+</kw>
+<msg timestamp="20220823 14:06:49.609" level="INFO">Repeating keyword, round 289/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:49.621" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:49.620" endtime="20220823 14:06:50.005"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:49.619" endtime="20220823 14:06:50.006"/>
+</kw>
+<msg timestamp="20220823 14:06:50.006" level="INFO">Repeating keyword, round 290/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:50.018" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:50.017" endtime="20220823 14:06:50.414"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:50.006" endtime="20220823 14:06:50.424"/>
+</kw>
+<msg timestamp="20220823 14:06:50.424" level="INFO">Repeating keyword, round 291/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:50.426" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:50.425" endtime="20220823 14:06:50.787"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:50.425" endtime="20220823 14:06:50.797"/>
+</kw>
+<msg timestamp="20220823 14:06:50.797" level="INFO">Repeating keyword, round 292/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:50.809" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:50.799" endtime="20220823 14:06:51.206"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:50.797" endtime="20220823 14:06:51.207"/>
+</kw>
+<msg timestamp="20220823 14:06:51.207" level="INFO">Repeating keyword, round 293/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:51.219" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:51.218" endtime="20220823 14:06:52.000"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:51.207" endtime="20220823 14:06:52.010"/>
+</kw>
+<msg timestamp="20220823 14:06:52.010" level="INFO">Repeating keyword, round 294/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:52.022" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:52.012" endtime="20220823 14:06:52.672"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:52.011" endtime="20220823 14:06:52.672"/>
+</kw>
+<msg timestamp="20220823 14:06:52.673" level="INFO">Repeating keyword, round 295/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:52.676" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:52.674" endtime="20220823 14:06:53.188"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:52.673" endtime="20220823 14:06:53.188"/>
+</kw>
+<msg timestamp="20220823 14:06:53.188" level="INFO">Repeating keyword, round 296/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:53.191" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:53.190" endtime="20220823 14:06:53.563"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:53.189" endtime="20220823 14:06:53.573"/>
+</kw>
+<msg timestamp="20220823 14:06:53.573" level="INFO">Repeating keyword, round 297/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:53.578" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:53.575" endtime="20220823 14:06:54.046"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:53.573" endtime="20220823 14:06:54.047"/>
+</kw>
+<msg timestamp="20220823 14:06:54.047" level="INFO">Repeating keyword, round 298/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:54.050" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:54.049" endtime="20220823 14:06:54.631"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:54.048" endtime="20220823 14:06:54.632"/>
+</kw>
+<msg timestamp="20220823 14:06:54.632" level="INFO">Repeating keyword, round 299/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:54.644" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:54.643" endtime="20220823 14:06:55.125"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:54.632" endtime="20220823 14:06:55.135"/>
+</kw>
+<msg timestamp="20220823 14:06:55.135" level="INFO">Repeating keyword, round 300/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:55.147" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:55.137" endtime="20220823 14:06:55.634"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:55.136" endtime="20220823 14:06:55.635"/>
+</kw>
+<msg timestamp="20220823 14:06:55.635" level="INFO">Repeating keyword, round 301/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:55.638" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:55.637" endtime="20220823 14:06:56.231"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:55.636" endtime="20220823 14:06:56.241"/>
+</kw>
+<msg timestamp="20220823 14:06:56.241" level="INFO">Repeating keyword, round 302/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:56.253" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:56.243" endtime="20220823 14:06:56.868"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:56.242" endtime="20220823 14:06:56.878"/>
+</kw>
+<msg timestamp="20220823 14:06:56.878" level="INFO">Repeating keyword, round 303/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:56.880" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:56.879" endtime="20220823 14:06:57.335"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:56.878" endtime="20220823 14:06:57.336"/>
+</kw>
+<msg timestamp="20220823 14:06:57.336" level="INFO">Repeating keyword, round 304/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:57.339" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:57.338" endtime="20220823 14:06:57.769"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:57.336" endtime="20220823 14:06:57.769"/>
+</kw>
+<msg timestamp="20220823 14:06:57.779" level="INFO">Repeating keyword, round 305/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:57.781" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:57.780" endtime="20220823 14:06:58.238"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:57.779" endtime="20220823 14:06:58.248"/>
+</kw>
+<msg timestamp="20220823 14:06:58.248" level="INFO">Repeating keyword, round 306/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:58.260" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:58.250" endtime="20220823 14:06:58.788"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:58.249" endtime="20220823 14:06:58.790"/>
+</kw>
+<msg timestamp="20220823 14:06:58.790" level="INFO">Repeating keyword, round 307/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:58.795" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:58.791" endtime="20220823 14:06:59.294"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:58.790" endtime="20220823 14:06:59.294"/>
+</kw>
+<msg timestamp="20220823 14:06:59.294" level="INFO">Repeating keyword, round 308/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:06:59.306" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:06:59.305" endtime="20220823 14:07:00.785"/>
+</kw>
+<status status="PASS" starttime="20220823 14:06:59.295" endtime="20220823 14:07:00.791"/>
+</kw>
+<msg timestamp="20220823 14:07:00.795" level="INFO">Repeating keyword, round 309/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:07:00.809" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<status status="PASS" starttime="20220823 14:07:00.797" endtime="20220823 14:07:22.321"/>
+</kw>
+<status status="PASS" starttime="20220823 14:07:00.795" endtime="20220823 14:07:22.321"/>
+</kw>
+<msg timestamp="20220823 14:07:22.331" level="INFO">Repeating keyword, round 310/5000.</msg>
+<kw name="clicar no botão">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 14:07:22.345" level="INFO">Clicking element '//button[contains(@id,'send')]'.</msg>
+<msg timestamp="20220823 14:07:25.130" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: Browsing context has been discarded
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:188:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:442:5
+assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:493:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:155:4
+GeckoDriver.prototype.takeScreenshot@chrome://remote/content/marionette/driver.js:2331:15
+despatch@chrome://remote/content/marionette/server.js:304:40
+execute@chrome://remote/content/marionette/server.js:277:16
+onPacket/&lt;@chrome://remote/content/marionette/server.js:250:20
+onPacket@chrome://remote/content/marionette/server.js:251:9
+_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:502:20
+observe@resource://gre/modules/AsyncShutdown.jsm:577:16
+</msg>
+<msg timestamp="20220823 14:07:32.619" level="FAIL">NoSuchWindowException: Message: Browsing context has been discarded
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:188:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:442:5
+assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:493:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:155:4
+GeckoDriver.prototype.findElements@chrome://remote/content/marionette/driver.js:1531:15
+despatch@chrome://remote/content/marionette/server.js:304:40
+execute@chrome://remote/content/marionette/server.js:277:16
+onPacket/&lt;@chrome://remote/content/marionette/server.js:250:20
+onPacket@chrome://remote/content/marionette/server.js:251:9
+_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:502:20
+observe@resource://gre/modules/AsyncShutdown.jsm:577:16
+</msg>
+<status status="FAIL" starttime="20220823 14:07:22.344" endtime="20220823 14:07:32.654"/>
+</kw>
+<status status="FAIL" starttime="20220823 14:07:22.333" endtime="20220823 14:07:32.667"/>
+</kw>
+<status status="FAIL" starttime="20220823 14:04:15.604" endtime="20220823 14:07:32.678"/>
+</kw>
+<status status="FAIL" starttime="20220823 14:04:15.603" endtime="20220823 14:07:32.690"/>
+</kw>
+<status status="FAIL" starttime="20220823 14:04:04.155" endtime="20220823 14:07:32.702">NoSuchWindowException: Message: Browsing context has been discarded
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:188:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:442:5
+assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:493:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:155:4
+GeckoDriver.prototype.findElements@chrome://remote/content/marionette/driver.js:1531:15
+despatch@chrome://remote/content/marionette/server.js:304:40
+execute@chrome://remote/content/marionette/server.js:277:16
+onPacket/&lt;@chrome://remote/content/marionette/server.js:250:20
+onPacket@chrome://remote/content/marionette/server.js:251:9
+_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:502:20
+observe@resource://gre/modules/AsyncShutdown.jsm:577:16
+</status>
+</test>
+<doc>URL da página: https://damp-hollows-09002.herokuapp.com/</doc>
+<status status="FAIL" starttime="20220823 14:04:03.120" endtime="20220823 14:07:32.774"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Teste2">Teste2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220823 14:07:25.130" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: Browsing context has been discarded
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:188:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:442:5
+assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:493:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:155:4
+GeckoDriver.prototype.takeScreenshot@chrome://remote/content/marionette/driver.js:2331:15
+despatch@chrome://remote/content/marionette/server.js:304:40
+execute@chrome://remote/content/marionette/server.js:277:16
+onPacket/&lt;@chrome://remote/content/marionette/server.js:250:20
+onPacket@chrome://remote/content/marionette/server.js:251:9
+_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:502:20
+observe@resource://gre/modules/AsyncShutdown.jsm:577:16
+</msg>
+</errors>
+</robot>

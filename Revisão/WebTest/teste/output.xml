@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220816 18:38:47.973" rpa="false" schemaversion="3">
+<suite id="s1" name="Teste" source="C:\Users\Arlison\Desktop\RobotFramework\Revisão\WebTest\teste.robot">
+<test id="s1-t1" name="TC-01 - Acessar a página de login" line="20">
+<kw name="Abrir navegador" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 18:38:49.102" level="INFO">Opening browser 'Firefox' to base url 'None'.</msg>
+<msg timestamp="20220816 18:38:49.102" level="INFO">Firefox driver log is always forced to to: C:\Users\Arlison\Desktop\RobotFramework\Revisão\WebTest\teste\geckodriver-14.log</msg>
+<status status="PASS" starttime="20220816 18:38:49.102" endtime="20220816 18:38:57.461"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 18:38:57.461" endtime="20220816 18:38:57.733"/>
+</kw>
+<status status="PASS" starttime="20220816 18:38:49.102" endtime="20220816 18:38:57.733"/>
+</kw>
+<kw name="Acessar pagina gmail">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220816 18:38:57.733" level="INFO">Opening url 'https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;service=mail&amp;sacu=1&amp;rip=1&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin'</msg>
+<status status="PASS" starttime="20220816 18:38:57.733" endtime="20220816 18:39:01.613"/>
+</kw>
+<status status="PASS" starttime="20220816 18:38:57.733" endtime="20220816 18:39:01.614"/>
+</kw>
+<kw name="Preencher campo de email com o valor">
+<kw name="Get Decrypted Text" library="CryptoLibrary">
+<var>${user}</var>
+<arg>${EMAIL}</arg>
+<doc>Decrypts cipher text and returns the plain text.</doc>
+<msg timestamp="20220816 18:39:01.795" level="INFO">Decrypting text and return value.</msg>
+<msg timestamp="20220816 18:39:05.378" level="INFO">${user} = ***</msg>
+<status status="PASS" starttime="20220816 18:39:01.794" endtime="20220816 18:39:05.378"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_TEXTBOX}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220816 18:39:05.378" level="INFO">Typing text '***' into text field '//input[contains(@id,'identifierId')]'.</msg>
+<status status="PASS" starttime="20220816 18:39:05.378" endtime="20220816 18:39:05.598"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${user}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220816 18:39:05.598" endtime="20220816 18:39:05.598"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${EMAIL_1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220816 18:39:05.598" endtime="20220816 18:39:05.602"/>
+</kw>
+<status status="PASS" starttime="20220816 18:39:01.763" endtime="20220816 18:39:05.602"/>
+</kw>
+<status status="PASS" starttime="20220816 18:38:49.102" endtime="20220816 18:39:05.606"/>
+</test>
+<doc>URL da página: https://damp-hollows-09002.herokuapp.com/</doc>
+<status status="PASS" starttime="20220816 18:38:47.973" endtime="20220816 18:39:05.606"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Teste">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
