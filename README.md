@@ -25,7 +25,7 @@ Certifique-se de estar na pasta **WebTesting**
 * **-v** depois desse comando pode-se modificar qualquer valor de váriavel pela linha de comando. Exemplo: **BROWSER** é uma variavel, o valor padrão dela é firefox, ou seja, abrirá o navegador firefox, caso queira abrir o navegador chrome, basta apenas mudar o valor da variavel **BROWSER** para chrome
 * **-i** depois desse comando pode-se executar apenas Casos de teste com as Tags que foram definidas. Exemplo: **menus** foi uma tag escolhida para o Caso de teste 01.
 
-# Exemplo Robot Framework + Request(API testing)
+# Exemplo Robot Framework + Requests(API testing)
 ## I. Pré-Requisitos
 ### 1. Biblioteca Requests
 * `pip install robotframework-requests`
