@@ -3,7 +3,7 @@
 ### 1. Python
 * Instale o python [aqui](https://www.python.org/downloads/)
 **Nota**: Tenha certeza que a opção adicionar ao `PATH` foi marcada na instalação
-! [Exemplo](https://docs.python.org/3/_images/win_installer.png)
+![Exemplo](https://user-images.githubusercontent.com/58189901/193078650-903fad50-8608-4d8e-877b-a8a923765716.png)
 ### 2. Robot Framework
 Esse comando funciona apenas se o python ja estiver instalado
 * `pip install robotframework`
